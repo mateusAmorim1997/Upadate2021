@@ -1,1 +1,23 @@
+name: CI
 
+on:
+
+push:
+branches: [$default-branch]
+
+jobs: 
+
+build:
+
+runs-on: ubuntu-latest
+
+steps:
+
+-name: Build
+ run: echo "Build"
+
+-name: Test
+ run:echo "Test"
+
+-name:Deploy
+ run: echo"Deploy"
